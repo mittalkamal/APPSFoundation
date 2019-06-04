@@ -17,7 +17,7 @@ open class APPSFoundation: NSObject {
     /**
      @return A reference to the bundle for this Appstronomy Foundation framework.
      */
-    open static var bundle: Bundle {
+    public static var bundle: Bundle {
         return Bundle(for: self)
     }
 }

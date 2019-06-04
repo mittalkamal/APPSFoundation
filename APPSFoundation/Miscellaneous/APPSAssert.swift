@@ -38,5 +38,5 @@ public func APPSAssertSoftFail(_ condition: @autoclosure () -> Bool, _ message: 
 
 
 public func APPSAssert(_ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line, function: StaticString = #function) {
-    APPSAssertHardFail(condition, message, file: file, line: line, function: function)
+    APPSAssertHardFail(condition(), message(), file: file, line: line, function: function)
 }
